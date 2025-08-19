@@ -13,7 +13,7 @@ import { fromEvent, Subject, takeUntil } from "rxjs";
   imports: [CommonModule],
   templateUrl: "task1.component.html",
   styleUrl: "task1.component.scss",
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Task1Component implements OnChanges {
   private _destroyed$ = new Subject<void>();
